@@ -1,3 +1,6 @@
+# Local environment settings
+port: 80
+
 # Build settings
 markdown: redcarpet
 highlighter: pygments
