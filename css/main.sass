@@ -12,9 +12,10 @@
 
 $rs: 16px
 
-$font-serif: Linux Libertine
-$font-sans: 'Yanone Kaffeesatz', Open Sans, MundoSans, 'Helvetica Neue', Arial, Helvetica, sans-serif
-// $font-mf: "Yanone Kaffeesatz", $font-sans
+$font-serif: Linux Libertine, serif
+$font-sans: Open Sans, MundoSans, 'Helvetica Neue', Arial, Helvetica, sans-serif
+$font-yanone: 'Yanone Kaffeesatz', sans-serif
+$font-indie: 'Indie Flower', sans-serif
 
 
 @mixin respond-to($breakpoint)
@@ -75,6 +76,7 @@ body
     text-indent: -9999px
 
 .blog-header
+  font-family: $font-yanone
   width: 100%
   max-width: 640px
   margin: 0 auto
@@ -343,7 +345,7 @@ body
       text-overflow: ellipsis
   .post-content
     width: 100%
-    font-family: $font-sans
+    font-family: $font-serif
     color: #333
     h1, h2, h3
       font-family: $font-sans
