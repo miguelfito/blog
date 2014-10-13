@@ -4,6 +4,7 @@ title:  "¡Hola Mundo!"
 date:   2014-10-13 20:05:15
 categories: presentación
 tags: featured
+comments: true
 image: "/assets/article_images/2014-10-13-hola-mundo/railroad.jpg"
 ---
 
