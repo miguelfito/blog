@@ -6,7 +6,7 @@ markdown: redcarpet
 highlighter: pygments
 
 # Site settings
-title: "mIGUELfITO.com"
+title: "mIGUELfITO"
 description: > # this means to ignore newlines until "email:"
     A mess evolved into disaster
 
