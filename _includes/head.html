@@ -10,8 +10,8 @@
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
-  
-  <!-- Apple Web App --> 
+
+  <!-- Apple Web App -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="mIGUELfITO">
@@ -20,18 +20,27 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   <link rel="shortcut icon" href="{{ "/assets/images/favicon.png" | prepend: site.baseurl }}">
+
   <!-- iOS & Android devices shortcuts icon -->
   <link rel="apple-touch-icon" href="{{ "/assets/images/apple-touch-icon-black.png" | prepend: site.baseurl }}">
-  <!--  <link rel="stylesheet" href="{{asset "js/styles/obsidian.css"}}"> -->
-  <link rel="stylesheet" href="http://brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Are this links necessary? -->
+  <!-- <link rel="stylesheet" href="http://brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
   <link rel="stylesheet" type="text/css" media="screen" href="{{ "/css/main.css"  | prepend: site.baseurl  }}" />
   <link rel="stylesheet" type="text/css" media="print" href="{{ "/css/print.css"  | prepend: site.baseurl  }}" />
+
+  <!-- Scripts -->
+  <!-- External scripts request -->
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
+  <!-- Local scripts -->
   <script type="text/javascript" src="{{ "/assets/js/jquery.fitvids.js" | prepend: site.baseurl  }}"></script>
   <script type="text/javascript" src="{{ "/assets/js/index.js" | prepend: site.baseurl  }}"></script>
   <script type="text/javascript" src="{{ "/assets/js/readingTime.min.js" | prepend: site.baseurl  }}"></script>
-  
+
+  <!-- Prevent standalone links opened in Safari -->
+  <script type="text/javascript" src="{{ "/assets/js/links.js" | prepend: site.baseurl  }}"></script>
+
 </head>
