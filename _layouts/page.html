@@ -2,66 +2,66 @@
 ---
 <!DOCTYPE html>
 <html>
-{% include head.html %}
-<body itemscope itemtype="http://schema.org/Article">
-  {% include header.html %}
-  <article class="post">
+  {% include head.html %}
+  <body itemscope itemtype="http://schema.org/Article">
+    {% include header.html %}
     <main class="content" role="main">
-      {% if page.image %}
-      <div class="article-image">
-        <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})">
-          Article Image
-        </div>
-        <div class="post-meta">
-          <h1 class="post-title">{{ page.title }}</h1>
-          <div class="cf post-meta-text">
-            <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
-            <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
+      <article class="post">
+        {% if page.image %}
+        <div class="article-image">
+          <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})">
+            Article Image
           </div>
-          <div style="text-align:center">
-            <a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a>
+          <div class="post-meta">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <div class="cf post-meta-text">
+              <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
+              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
+            </div>
+            <div style="text-align:center">
+              <a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a>
+            </div>
           </div>
         </div>
-      </div>
-      <script>
-      (function ($) {
-        "use strict";
+        <script>
+          (function ($) {
+              "use strict";
 
-        $(document).ready(function(){
+              $(document).ready(function(){
 
-          var $window = $(window),
-          $image = $('.post-image-image');
-          $window.on('scroll', function() {
-            var top = $window.scrollTop();
+                  var $window = $(window),
+                      $image = $('.post-image-image');
+                  $window.on('scroll', function() {
+                      var top = $window.scrollTop();
 
-            if (top < 0 || top > 1500) { return; }
-              $image
-              .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
-              .css('opacity', 1-Math.max(top/700, 0));
-            });
-            $window.trigger('scroll');
+                      if (top < 0 || top > 1500) { return; }
+                      $image
+                          .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+                          .css('opacity', 1-Math.max(top/700, 0));
+                  });
+                  $window.trigger('scroll');
 
-            var height = $('.article-image').height();
-            $('.post-content').css('padding-top', height + 'px');
+                  var height = $('.article-image').height();
+                      $('.post-content').css('padding-top', height + 'px');
 
-            $(function() {
-              $('a[href*=#]:not([href=#])').click(function() {
-                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                  var target = $(this.hash);
-                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                  if (target.length) {
-                    $('html,body').animate({
-                      scrollTop: target.offset().top
-                    }, 500);
-                    return false;
-                  }
-                }
+                  $(function() {
+                    $('a[href*=#]:not([href=#])').click(function() {
+                      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                          $('html,body').animate({
+                            scrollTop: target.offset().top
+                          }, 500);
+                          return false;
+                        }
+                      }
+                    });
+                  });
+
               });
-            });
 
-          });
-
-        }(jQuery));
+          }(jQuery));
         </script>
         {% else %}
         <div class="noarticleimage">
@@ -81,11 +81,11 @@
           <a name="topofpage"></a>
           {{content}}
         </section>
-      </div>
+        </div>
+      </article>
     </main>
-  </article>
-  <div class="bottom-closer">
-    <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.baseurl }}{{ site.cover }})"{% endif %}>
+    <div class="bottom-closer">
+      <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.baseurl }}{{ site.cover }})"{% endif %}>
       Image
     </div>
     <div class="inner">
@@ -93,21 +93,21 @@
       <h2 class="blog-description">{{ site.description }}</h2>
       <a href="{{ site.baseurl }}" class="btn">Volver a la portada</a>
     </div>
-  </div>
+    </div>
 
-  <!-- Disqus scripts -->
-  <script type="text/javascript">
-  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-  var disqus_shortname = 'blog-miguelfito'; // required: replace example with your forum shortname
+    <!-- Disqus scripts -->
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blog-miguelfito'; // required: replace example with your forum shortname
 
-  /* * * DON'T EDIT BELOW THIS LINE * * */
-  (function () {
-    var s = document.createElement('script'); s.async = true;
-    s.type = 'text/javascript';
-    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-  }());
-  </script>
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
 
-</body>
+  </body>
 </html>
