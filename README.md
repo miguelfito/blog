@@ -24,6 +24,7 @@ Getting Started
 - [Fork this repository](https://github.com/dirkfabisch/mediator)
 - Clone it: `git clone https://github.com/YOUR-USER/mediator`
 - Install the [GitHub Pages gem](https://github.com/github/pages-gem) (includes Jekyll): `bundle install`
+- Install the [Bourbon gem](https://github.com/thoughtbot/bourbon) `gem install bourbon`
 - Run the jekyll server: `jekyll serve`
 
 You should have a server up and running locally at <http://localhost:4000>.
@@ -51,7 +52,7 @@ Main settings for the site
 ### Social
 
 The template allows to add all major social plattforms to your site.
-Fill the the form for each plattform. If you leave the share_* entries empty, the sharing buttons below a post are not shown.  
+Fill the the form for each plattform. If you leave the share_* entries empty, the sharing buttons below a post are not shown.  If you leave the **url** and **desc** empty the icons are not shown on the index page, but the share icons on the article pages remains untouched (Thanks to [Phil](https://github.com/philsturgeon))
 
 * **icon**:	name of social plattform (must match a name of [font-awsome](http://fortawesome.github.io/Font-Awesome/) icon set )
 * **url**:	url of your account

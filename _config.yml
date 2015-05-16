@@ -1,49 +1,47 @@
-# Local environment settings
-port: 80
-
 # Build settings
 markdown: redcarpet
 highlighter: pygments
-
+gems:
+  - jemoji
+  
 # Site settings
-title: "mIGUELfITO"
+title: "Mediator"
 description: > # this means to ignore newlines until "email:"
-    A mess evolved into disaster
+   A Jekyll theme - Medium inspired
 
-email: miguelfito@gmail.com
+email: a-mail@mail.mail
 #blog logo
-logo: "/assets/images/mf_logo.png"
+logo: "/assets/images/df_logo.jpg"
 # blog cover
-#cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
-cover: "/assets/images/background_image.jpg"
+cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
-name: 'Miguel Á. Melón'
-author: 'Miguel Ángel Melón'
+name: 'Dirk Fabisch'
+author: 'Dirk Fabisch'
 author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
-url: "http://miguelfito.com" # the base hostname & protocol for your site
-baseurl: "/blog"
+url: "http://myblog.***.***" # the base hostname & protocol for your site
+baseurl: ""
 
 # social icons and sharing options
 social:
   - icon:	twitter
-    url:	https://twitter.com/miguelfito
+    url:	https://twitter.com/dirkfabisch
     desc: Follow me on twitter
     share_url: http://twitter.com/share
     share_title: ?text=
     share_link: "&amp;url="
 
-  - icon:	facebook
-    url:	https://facebook.com/miguel.melon
-    desc: Connect with me facebook
-    share_url: //www.facebook.com/sharer.php
-    share_title: ?t=
-    share_link: "&amp;u="
+#  - icon:	facebook
+#    url:	https://facebook.com/???
+#    desc: Connect with me facebook
+#    share_url: https://www.facebook.com/sharer.php
+#    share_title: ?t=
+#    share_link: "&amp;u="
 
   - icon:	github
-    url:	https://github.com/miguelfito
+    url:	https://github.com/dirkfabisch
     desc:	Fork me on github
     share_url:
     share_title:
