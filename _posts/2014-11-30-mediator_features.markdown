@@ -32,6 +32,22 @@ Examples for different formats and css features
 #Links
 This is an [example link](http://example.com/ "With a Title").
 
+#Code
+```bash
+#!/usr/bin/env bash
+
+MESSAGE="Hello World!"
+
+echo -n $MESSAGE
+
+```
+
+And now, without defining `language`:
+
+```
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+```
+
 #Combinations
 >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
 >
