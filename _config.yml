@@ -26,6 +26,12 @@ paginate:	5
 url: "https://blog.miguelfito.com" # the base hostname & protocol for your site
 baseurl: ""
 
+# Google Analytics
+google_analytics: "UA-21772482-5"
+
+# Disqus
+disqus: "blog-miguelfito"
+
 # social icons and sharing options
 social:
   - icon:	twitter
