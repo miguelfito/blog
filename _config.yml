@@ -2,10 +2,9 @@
 port: 80
 
 # Build settings
-markdown: redcarpet
-highlighter: pygments
 gems:
   - jemoji
+  - jekyll-paginate
 
 # Site settings
 title: "mIGUELfITO"
@@ -24,8 +23,8 @@ author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
-url: "http://miguelfito.com" # the base hostname & protocol for your site
-baseurl: "/blog"
+url: "https://blog.miguelfito.com" # the base hostname & protocol for your site
+baseurl: ""
 
 # social icons and sharing options
 social:
