@@ -77,6 +77,7 @@ layout: default
     </div>
 
     <h5 class="index-headline normal"><span>Regular</span></h5>
+    {% endif %}
 
     <div class="cf frame">
       {% for post in paginator.posts %}
@@ -93,19 +94,9 @@ layout: default
 <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
             </div>
           </div>
-          <div>
-      </article>
+        </article>
       {% endfor %}
-      </div>
-
-      <nav class="pagination" role="navigation">
-        {% if paginator.next_page %}
-        <a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Posts antiguos</a> {% endif %}
-        <span class="page-number">Página {{ paginator.page }} de {{ paginator.total_pages }}</span> {% if paginator.previous_page %} {% if paginator.page == 2 %}
-        <a class="older-posts" href="/">Posts recientes &rarr;</a> {% else %}
-        <a class="older-posts" href="/page{{paginator.previous_page}}">Posts rencientes &rarr;</a> {% endif %} {% endif %}
-      </nav>
-
+    </div>
 
     <nav class="pagination" role="navigation">
       {% if paginator.next_page %}
