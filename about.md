@@ -13,4 +13,4 @@ Fácil:
 
 CV: [Miguel Ángel Melón Pérez][cv]
 
-[cv]: http://miguelfito.com/cvitae/cv_Miguel_Angel_Melon_Perez.pdf
+[cv]: https://cvitae.miguelfito.com/CV_Miguel_Ángel_Melón_Pérez_ESP.pdf
