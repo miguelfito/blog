@@ -6,6 +6,7 @@
 @import 'bourbon/bourbon'
 
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Ubuntu+Mono|Yanone+Kaffeesatz')
+@import url('https://fontlibrary.org/face/fantasque-sans-mono')
 
 .cf
   @include clearfix
@@ -13,10 +14,9 @@
 $rs: 20px
 
 $font-serif: Linux Libertine, serif
-//$font-sans: Open Sans, MundoSans, 'Helvetica Neue', Arial, Helvetica, sans-serif
-$font-sans: 'Yanone Kaffeesatz', Open Sans, MundoSans, 'Helvetica Neue', Arial, Helvetica, sans-serif
-$font-yanone: 'Yanone Kaffeesatz', 'Helvetica Neue', Arial, Helvetica, sans-serif
+$font-sans: 'Yanone Kaffeesatz', 'Helvetica Neue', Arial, Helvetica, sans-serif
 $font-indie: 'Indie Flower', sans-serif
+$font-monospace: 'FantasqueSansMonoRegular', 'Ubuntu Mono', monospace
 
 
 @mixin respond-to($breakpoint)
@@ -33,7 +33,7 @@ main
 
 
 body
-  font-family: $font-yanone
+  font-family: $font-sans
   margin: 0
   padding: 0
   text-rendering: optimizeLegibility
@@ -93,7 +93,7 @@ body
     text-indent: -9999px
 
 .blog-header
-  font-family: $font-yanone
+  font-family: $font-sans
   width: 100%
   max-width: 640px
   margin: 0 auto
@@ -162,7 +162,7 @@ body
     &:last-child
       border-bottom: 0px
     .post-title
-      font-family: $font-yanone
+      font-family: $font-sans
       letter-spacing: -0.02em
       font-weight: 700
       font-style: normal
@@ -381,7 +381,6 @@ body
       text-overflow: ellipsis
   .post-content
     width: 100%
-    //font-family: $font-serif
     font-family: $font-sans
     color: #333
     h1, h2, h3
@@ -628,6 +627,7 @@ body
 
 pre,
 code
+  font-family: $font-monospace
   font-size: 15px
   border: 1px solid #e8e8e8
   border-radius: 3px
